@@ -22,6 +22,7 @@ func AttachAllRoutes(s *api.Server) {
 		auth.PostRegisterRoute(s),
 		common.GetHealthyRoute(s),
 		common.GetReadyRoute(s),
+		common.GetSumRoute(s),
 		common.GetSwaggerRoute(s),
 		common.GetVersionRoute(s),
 		push.GetPushTestRoute(s),
